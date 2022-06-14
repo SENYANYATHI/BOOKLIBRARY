@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+   
+    <title>login and register form</title>
+    <link rel="stylesheet" href="Untitled-1.html">
+    <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" Onclick="Login()">Log in</button>
+  
+            </div>
+         
+            <form action="Untitled-1.html" onsubmit="return validate()" class="Login()"><br>
+                <br>
+                <input type="text" id="Username"class="input-field" placeholder="username" required><br>
+                <br>
+                <input type="text" id="password" class="input-field" placeholder="password" required><br>
+                <br>
+                <br>
+                <input type="checkbox" name="" id="remember me">
+                <label>remember me</label><br>
+                <br>
+                <br>
+                <input type="submit" value="login" class="submit-button" onclick="Login()">
+
+            </form>
+        
+            </div>      
+        </div> 
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("btn");
+
+           
+            function Login() 
+            {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+
+            }
+        </script>
+        <script>
+            var modal = document.getElementById('input-group');
+            window.onclick = function(event)
+            {
+                if(event.target==modal)
+                {
+                    modal.style.display="none"
+
+                }
+            }
+        </script>
+        <script>
+        
+var attempt = 3; 
+
+function validate(){
+var Username = document.getElementById("Username").value;
+var password = document.getElementById("password").value;
+if ( Username == "matshepo" && password == "tshepo@123"){
+alert ("Login successfully");
+window.location = "Untitled-1.html";
+return false;
+}
+else{
+attempt --;
+alert("You have left "+attempt+" attempt;");
+
+if( attempt == 0){
+document.getElementById("Username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<title> complete responsive online book store</title>
+
+<link rel="styleshhet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="Untitled-1.css">
+  <head>
+      <body>
+<header class="header">
+<div class="header-1">
+    <a href="#" class="logo"><i class="fas fa-book"></i> Kindle book store </a>
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search-here" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        </form>
+       <div class="icons">
+           <div id="search-button" class="fas fa-search"></div>
+           <a href="#" class="fas fa-heart"></a>
+           <a href="#" class="fas fa-shopping-cart"></a>
+           <div id="login-button" class="fas fa-user"></div>
+       </div> 
+</div>
+<div class="header-2">
+  <nav class="navbar">
+    <a href="Untitled-1.html">home</a>
+    <a href="featured">featured</a>
+    <a href="arrivals">arrivals</a>
+    <a href="reviews">reviews</a>
+    <a href="blogs">blogs</a>
+  </nav>
+</div>
+</header>
+
+<nav class="bottom-navbar">
+
+  <a href="Untitled-1.html" class="fas fa-home"></a>
+  <a href="featured"  class="fas fa-list"></a>
+  <a href="arrivals" class="fas fa-tags"></a>
+  <a href="reviews" class="fas fa-comments"></a>
+  <a href="blogs" class="fas fa-blog"></a>
+</nav>
+
+
+<div class="login-form-container">
+  <div id="close-login-button" class="fas fa-times"></div>
+  <form name="RegForm" action="login.html" onsubmit="return validate()" class="register">
+    
+    <h3> register</h3>
+    <p><b>please fill in this form to register..</b></p><br>
+
+    <span>Username</span>
+    <input type="Username" name="" placeholder= "Username" id="" ><br>
+    
+    <span>name_and_surname</span>
+    <input type="name_and_surname" name="" placeholder= "name_and_surname" id="" ><br>
+    <span>email_address</span>
+    <input type="email_address" name="" placeholder= "enter your email" id="" ><br>
+
+    <span>contact</span>
+    <input type="contact" name="" placeholder= "contact number" id="" ><br>
+    
+    <span>password</span>
+    <input type="password" name="" placeholder="password" id="" ><br>
+    <span>confirm_password</span>
+    <input type="comfirm_password" name="" placeholder="confirm password" id="" ><br>
+
+    <img src="\ck\a" alt="">
+    <div class="checkbox">
+
+      <input type="checkbox" name="" id="remember me">
+      <label for="remember me">remember me</label>
+    </div>
+    
+   <input type="submit" value="register" class="submit-button" onclick="register()">
+    <p>forget password? <a href="#forget" >click here</a></p>
+    <p>if you don't have account ? <a href="signup">create here</a></p>
+
+  
+  </form>
+
+</div>
+
+<section class="home" id="home">
+<div class="row">
+  <div class="content">
+
+    <h4>upto 25% off</h4>
+    <p>we are selling books for the year in a better cost</p>
+  <a href="#" class="button">shop now</a><br>
+</div>
+
+ 
+    <br>
+    <h5 class="authors" ><span> About The Authors</span> <h5>
+    <img src="cherylbooks.jpg" alt="">
+    <p>Cheryl Dickow holds a Master's Degree in Education and combines her faith and degree in her position as President of Bezalel Books. Her book, the truth, spare me</p>
+    <a href="#" class="button" >follow</a>
+  </div>
+ 
+  
+  </div>
+</div>
+<section class="icons-container">
+  <div class="icons">
+    <i class="fas fa-paper-plane"></i>
+    <div class="content">
+    <h6>free shipping</h6>
+    <p>order over R100</p>
+  </div>
+  </div>
+
+  <div class="icons">
+    <i class="fas fa-lock"></i>
+    <div class="content">
+    <h6>secure payment</h6>
+    <p> R100 secure payment</p>
+  </div>
+  </div>
+
+  <div class="icons">
+    <i class="fas fa-redo-alt"></i>
+    <div class="content">
+    <h6>easy return</h6>
+    <p>10 days returns</p>
+  </div>
+  </div>
+  <div class="icons">
+    <i class="fas fa-headset"></i>
+    <div class="content">
+    <h6>24/7 support</h6>
+    <p>call anytime</p>
+  </div>
+  </div>
+</section>
+</section>
+
+<section class="featured" id="featured">
+  <h1 class="heading"><span>featured books</span></h1>
+  
+  <div class=" swiper featured-slider">
+    <div class="swiper-wraper">
+      <div class="box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="images">
+          <img src="truth.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>featured books</h2>
+          <div class="price">R99.08 </div>
+          <a href="#" class="button">buy now</a>
+          <a href="#" class="button">add to cart</a>
+</div>
+</div>
+        
+<div class="box">
+  <div class="icons">
+    <a href="#" class="fas fa-search"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+  </div>
+  <div class="images">
+    <img src="spareme.jpg" alt="">
+  </div>
+  <div class="content">
+    <h2>featured books</h2>
+    <div class="price">R199.09</div>
+    <a href="#" class="button">buy now</a>
+    <a href="#" class="button">add to cart</a>     
+                
+  
+</div>
+</div>
+          
+<div class="box">
+  <div class="icons">
+    <a href="#" class="fas fa-search"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-eye"></a>
+  </div>
+  <div class="images">
+    <img src="tehsecret.jpg" alt="">
+  </div>
+  <div class="content">
+  <h2>featured books</h2>
+   <div class="price">R310.98</div>
+   <a href="#" class="button">buy now</a>
+   <a href="#" class="button">add to cart </a>      
+</div>
+  </div>
+  
+          
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-search"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="images">
+      <img src="adult.jpg" alt="">
+    </div>
+    <div class="content">
+    <h2>featured books</h2>
+    <div class="price">R299.67 </div>
+    <a href="#" class="button">buy now</a>
+    <a href="#" class="button">add to cart</a>         
+</div>
+  </div>
+
+    
+                          
+  <div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-search"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="images">
+    <img src="readyornot.jpg" alt="">
+    </div>
+    <div class="content">
+      <h2>featured books</h2>
+    <div class="price">R120.34</div>
+    <a href="#" class="button">buy now</a>
+    <a href="#" class="button">add to cart</a>
+                     
+</div>
+    </div>
+                                        
+ 
+        <div class="swiper-slides box">
+          <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="images">
+          <img src="beyond.jpg" alt="">
+          </div>
+          <div class="content">
+          <h2>featured books</h2>
+          <div class="price">R290.54</div>
+          <a href="#" class="button">buy now</a>
+         <a href="#" class="button">add to cart</a>
+         </div>
+         </div>
+
+<div class="box">
+    <div class="icons">
+      <a href="#" class="fas fa-search"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+    </div>
+    <div class="images">
+    <img src="impretty.jpg" alt="">
+    </div>
+    <div class="content">
+      <h2>featured books</h2>
+    <div class="price">R190.34</div>
+    <a href="#" class="button">buy now</a>
+    <a href="#" class="button">add to cart</a>
+                     
+</div>
+    </div>
+
+    <div class="box">
+      <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+      </div>
+      <div class="images">
+      <img src="butilove.jpg" alt="">
+      </div>
+      <div class="content">
+        <h2>featured books</h2>
+      <div class="price">R200.34</div>
+      <a href="#" class="button">buy now</a>
+      <a href="#" class="button">add to cart</a>
+                       
+  </div>
+      </div>
+
+
+        </div>
+        </div>
+      </div>
+    <div class=".swiper-button-next"></div>
+    <div class=".swiper-button-prev"></div>
+  </div>
+</section>
+<section class="newletters">
+  <form action="">
+    <h7> subscribe for latest updates</h7>
+    <input type="email" name="" placeholder="enter your email" id="" class="box">
+    <input type="submit" value="subscribe" class="button">
+
+  </form>
+</section>
+<section class="arrivals" id="arrivals">
+  <h1 class="heading"><span>new arrivals</span></h1>
+  <div class=" swiper arrivals-slider">
+    <div class="swiper-wraper">
+      <a href="#" class="box">
+        <div class="image"></div>
+
+          <img src="truth.jpg" alt="">
+          <div class="content">
+            <h2>new arrivals</h2>
+            <div class="price">R26.67</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            
+          </div>
+        </div>
+      </a>
+      <a href="#" class="box">
+        <div class="image"></div>
+          <img src="impretty.jpg" alt="">
+          <div class="content">
+            <h2>new arrivals</h2>
+            <div class="price">R26.67</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              </div>
+              </div>
+              </a>
+              <a href="#" class="box">
+                <div class="image">
+                </div>
+                  <img src="adult.jpg" alt="">
+                  <div class="content">
+                    <h2>new arrivals</h2>
+                    <div class="price">R26.67</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      </div>
+                      </a>
+
+                      <a href="#" class="box">
+                        <div class="image">
+                        </div>
+                          <img src="uncommon.jpg" alt="">
+                          <div class="content">
+                            <h2>new arrivals</h2>
+                            <div class="price">R26.67</div>
+                            <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                              </div>
+                              </div>
+                              </a>
+
+
+                                <a href="#" class="box">
+                                <div class="image">
+                                </div>
+                                  <img src="adult.jpg" alt="">
+                                  <div class="content">
+                                    <h2>new arrivals</h2>
+                                    <div class="price">R26.67</div>
+                                    <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half-alt"></i>
+                                      </div>
+                                      </div>
+                                      </a>
+
+                                     <a href="#" class="box">
+                                        <div class="image">
+                                        </div>
+                                          <img src="readyornot.jpg" alt="">
+                                          <div class="content">
+                                            <h2>new arrivals</h2>
+                                            <div class="price">R26.67</div>
+                                            <div class="stars">
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star-half-alt"></i>
+                                              </div>
+                                              </div>
+                                              </a>
+
+
+                            </div>
+
+                    </div>
+            </div>
+    </div>
+  </div>
+
+</section>
+<section class="reviews" id="reviews">
+  <h1 class="heading"><span>Client 's reviews</span></h1>
+  <div class="swiper-reviews-slider">
+    <div class="swiper-wrapper">
+
+      <a href="#" class="box">
+        <div class="image">
+        </div>
+        <img src="./truth.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        
+        </div>
+      </div>
+    </a>
+      <a href="#" class="box">
+        <img src="./adult.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        
+        </div>
+      </div>
+    </a>
+      <a href="#" class="box">
+        <img src="./teenage.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+       
+        </div>
+      </div>
+    </a>
+      <a href="#" class="box">
+        <img src="./tehsecret.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        
+        </div>
+      </div>
+    </a>
+      <a href="#" class="box">
+        <img src="./spareme.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        
+        </div>
+      </div>
+    </a>
+      <div class="swiper-slider-box">
+        <a href="#" class="box">
+        <img src="./readyornot.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        
+        </div>
+      </div>
+    </a>
+      <a href="#" class="box">
+        <img src="./butilove.jpg" alt="">
+        <div class="content">
+        <h2>john sam</h2>
+        <p></p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+      </body>
+  
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script src="book.js"></script>
+  
+<script>
+        var x = document.getElementById("register");
+            var y = document.getElementById("btn");
+
+           
+            function Login() 
+            {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+
+            }
+        </script>
+        <script>
+            var modal = document.getElementById('input-group');
+            window.onclick = function(event)
+            {
+                if(event.target==modal)
+                {
+                    modal.style.display="none"
+
+                }
+            }       
+
+
+</script>
+ 
+<script src="book.js">
+  
+function Validate() 
+{
+  let Username = document.forms["RegForm"]["Username"];
+  let name_and_surname = document.forms["RegForm"]["name_and_surname"];
+  let email_address = document.forms["RegForm"]["Email"];
+  let contact = document.forms["RegForm"]["contact"];
+  let pass = document.forms["RegForm"]["Password"];
+  let pass2 = document.forms["RegForm"]["confirm_Password"];
+
+  if (Username.value == "")
+   {
+    alert("Please enter your Username.");
+    Username.focus();
+    return false;
+  }
+  if (name_and_surname.value == "")
+  {
+    alert("Please enetr your name_and_surname");
+    name_and_surname.focus();
+    return false;
+  }
+ 
+  if (email_address.value == "") 
+  {
+    alert("Please enter a valid e-mail address.");
+    email_address.focus();
+    return false;
+  }
+  if (email_address.value.indexOf("@", 0) < 0) 
+  {
+    alert("Please enter a valid e-mail address.");
+    email_address.focus();
+    return false;
+  }
+  if (email_address.value.indexOf(".", 0) < 0) 
+  {
+    alert("Please enter a valid e-mail address.");
+    email_address.focus();
+    return false;
+  }
+  if (contact.value == "")
+   {
+    alert("Please enter your contact.");
+    contact.focus();
+    return false;
+  }
+  if (pass.value == "")
+   {
+    alert("Please enter your password");
+    pass.focus();
+    return false;
+  }
+ if (pass2.value == "")
+ {
+  alert("re-enter  password");
+  pass2.focus();
+  return false;
+ }
+  return true;
+}
+function usernameverify(){
+  if(Username.value = ""){
+    
+  }
+
+}
+
+
+</script>
+  </head>
+
+  </head>
+  </html>
