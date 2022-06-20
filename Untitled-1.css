@@ -302,20 +302,7 @@ button:hover{
     border-image: round;
     color: var(--light-color);
 }
-.home .row .content h5{
-    color: var(--black);
-    font-size: 5.5rem;
-    text-align: left;
-    border-image: round;
-    background: none;
-}
-.home .row .content h5 img{
-    border-radius: 20%;
-    display: flex;
-    margin: 10px;
-    text-align: center;
-    
-}
+
 .icons-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
@@ -354,7 +341,6 @@ button:hover{
     flex-wrap: wrap;
     justify-content: center;
     background:var(--border);
-    
 }
 
 .featured .featured-slider .box{
@@ -366,7 +352,6 @@ button:hover{
     border-radius: 1px;
     text-align: center; 
 }
-
 .featured .featured-slider .box:hover{
     border: var(--border-hover);
 }
@@ -506,37 +491,48 @@ button:hover{
     color: var(--green);
 }
 .reviews .reviews-slider .box {
-    margin: 1rem 0;
-    border: var(--border);
-    padding: 2rem 1rem;
+    display: flex;
     align-items: center;
     gap: 1.5rem;
-    display: flex;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
     border-radius: 3px;
+    border-style: inset;
 }
 .reviews .reviews-slider .box:hover {
     border: var(--border-hover);
 }
-.reviews .reviews-slider .box .image img {
-    height: 7rem;
-    width:7rem ;
-    border-radius: 50%;
-    object-fit: cover;
+.reviews .reviews-sliders .box .image img {
+    height: 15rem;
 }
-.reviews .reviews-slider .box h2 {
+.reviews .reviews-sliders .box .content h2 {
+    font-size: 2rem;
     color: var(--black);
-    font-size: 2.2rem;
-    padding: .5rem 0;
+ 
 }
-.reviews .reviews-slider .box p {
-    color: var(--light-color);
-    font-size: 1.4rem;
-    padding: 1rem 0;
-    line-height: 2;
-}
-.reviews .reviews-slider .box .stars i {
+reviews .reviews-sliders .box .content .stars i {
     font-size: 1.5rem;
-    color: var(--green);
+   color: var(--green);
+}
+form.input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid --light-color;
+}
+form.input button {
+    color: var(--light-color);
+    border-left: none;
+    cursor: pointer;
+    width:20%;
+}
+form.input:hover {
+    background: #219150;
+}
+form.input::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 @media(max-width:991px) {

@@ -12,10 +12,14 @@ document.querySelector('#login-button').onclick = () =>{
 document.querySelector('#close-login-button').onclick = () =>{
     loginform.classList.remove('active');
 }
-document.querySelector('#signup').onclick = () => {
-    registerform.classList.toggle('active')
-}
+let shoppingform =document.querySelector('.shopping-cart-cointaner');
 
+document.querySelector('#shopping-button').onclick = () => {
+    shoppingform.classList.toggle('active');
+}
+document.querySelector('#close-shopping-cart').onclick = () => {
+    shoppingform.classList.remove('active');
+}
 windows.onscroll = () =>{
     searchform.classList.remove('active');
   

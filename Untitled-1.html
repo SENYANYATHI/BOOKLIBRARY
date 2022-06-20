@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title> complete responsive online book store</title>
 
 <link rel="styleshhet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
@@ -15,14 +15,16 @@
 <div class="header-1">
     <a href="#" class="logo"><i class="fas fa-book"></i> Kindle book store </a>
     <form action="" class="search-form">
-        <input type="search" name="" placeholder="search-here" id="search-box">
-        <label for="search-box" class="fas fa-search"></label>
+        <input type="search" placeholder="search-here" name="search-box">
+        <button type="submit"><i class="fas fa-search"></i></button>
         </form>
        <div class="icons">
            <div id="search-button" class="fas fa-search"></div>
            <a href="#" class="fas fa-heart"></a>
-           <a href="#" class="fas fa-shopping-cart"></a>
+           <div id="shopping-button" class="fas fa-shopping-cart" ></div>
+           <a href="cart.html">cart</a>
            <div id="login-button" class="fas fa-user"></div>
+          
        </div> 
 </div>
 <div class="header-2">
@@ -95,11 +97,6 @@
 </div>
 
  
-    <br>
-    <h5 class="authors" ><span> About The Authors</span> <h5>
-    <img src="cherylbooks.jpg" alt="">
-    <p>Cheryl Dickow holds a Master's Degree in Education and combines her faith and degree in her position as President of Bezalel Books. Her book, the truth, spare me</p>
-    <a href="#" class="button" >follow</a>
   </div>
  
   
@@ -158,6 +155,7 @@
           <div class="price">R99.08 </div>
           <a href="#" class="button">buy now</a>
           <a href="#" class="button">add to cart</a>
+          
 </div>
 </div>
         
@@ -419,126 +417,85 @@
   </div>
 
 </section>
-<section class="reviews" id="reviews">
-  <h1 class="heading"><span>Client 's reviews</span></h1>
-  <div class="swiper-reviews-slider">
-    <div class="swiper-wrapper">
 
-      <a href="#" class="box">
-        <div class="image">
-        </div>
-        <img src="./truth.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        
-        </div>
-      </div>
-    </a>
-      <a href="#" class="box">
-        <img src="./adult.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        
-        </div>
-      </div>
-    </a>
-      <a href="#" class="box">
-        <img src="./teenage.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-       
-        </div>
-      </div>
-    </a>
-      <a href="#" class="box">
-        <img src="./tehsecret.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        
-        </div>
-      </div>
-    </a>
-      <a href="#" class="box">
-        <img src="./spareme.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        
-        </div>
-      </div>
-    </a>
-      <div class="swiper-slider-box">
-        <a href="#" class="box">
-        <img src="./readyornot.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        
-        </div>
-      </div>
-    </a>
-      <a href="#" class="box">
-        <img src="./butilove.jpg" alt="">
-        <div class="content">
-        <h2>john sam</h2>
-        <p></p>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        
-        </div>
-      </a>
-      </div>
-    </div>
-  </div>
-
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span>Client Reviews</span></h1>
+      <div class=" swiper reviews-slider">
+        <div class="swiper-wraper">
+          <a href="#" class="box">
+            <div class="image"></div>
+    
+              <img src="impretty.jpg" alt="">
+              <div class="content">
+                <h2>john Sam</h2>
+                <p></p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                
+              </div>
+            </div>
+          </a>
+          <a href="#" class="box">
+            <div class="image"></div>
+    
+              <img src="butilove.jpg" alt="">
+              <div class="content">
+                <h2>john Sam</h2>
+                <p></p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                
+              </div>
+            </div>
+          </a>
+          <a href="#" class="box">
+            <div class="image"></div>
+    
+              <img src="spareme.jpg" alt="">
+              <div class="content">
+                <h2>john Sam</h2>
+                <p></p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                
+              </div>
+            </div>
+          </a>
+          <a href="#" class="box">
+            <div class="image"></div>
+    
+              <img src="beyond.jpg" alt="">
+              <div class="content">
+                <h2>john Sam</h2>
+                <p></p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                
+              </div>
+            </div>
+          </a>
+          </div>
+          </div>
 </section>
 
       </body>
-  
+   
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
       <script src="book.js"></script>
   
@@ -638,9 +595,6 @@ function usernameverify(){
 
 }
 
-
 </script>
-  </head>
 
-  </head>
   </html>
